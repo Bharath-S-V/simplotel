@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(226, 101, 164);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 101, 164, 1) 0%,
+    rgba(208, 183, 132, 1) 50%,
+    rgba(252, 176, 69, 0.9500175070028011) 100%
+  );
+}
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.head a {
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 20px;
+}
+
+.phone img,
+.icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.end-div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .end-div {
+    margin-top: 10px;
+  }
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+  .text-overlay {
+    max-width: 90%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 280px) {
+    .text-overlay {
+      max-width: 95%;
+    }
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  transform: translate(-50%, 50%);
+  color: rgb(255, 255, 255);
+  background-color: rgba(211, 112, 112, 0.5);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  max-width: 50%;
+  width: 400px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    display: none;
+  }
+  h1 {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Burger,
+  .pizza,
+  .pasta {
+    width: 100%;
+    max-width: none;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .Burger img,
+  .pizza img,
+  .pasta img {
+    width: 100%;
+    height: auto;
+  }
+
+  .Burger p,
+  .pizza p,
+  .pasta p {
+    display: none;
+  }
+}
+
+@media (max-width: 280px) {
+  .Burger,
+  .pizza,
+  .pasta {
+    display: none;
+  }
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.Burger,
+.pizza,
+.pasta {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.Burger img,
+.pizza img,
+.pasta img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.Burger h3,
+.pizza h3,
+.pasta h3,
+.Burger p,
+.pizza p,
+.pasta p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Burger {
+    width: 100%;
+  }
+}
+
+section h1 {
+  font-size: xxx-large;
+}
+
+.button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.my-button {
+  background-color: rgba(255, 254, 254, 0.5);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.my-button:hover {
+  background-color: rgba(208, 183, 132, 1);
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    margin-top: 20px;
+  }
+
+  .my-button {
+    padding: 10px 15px;
+    flex-direction: column;
+  }
+}
